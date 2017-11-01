@@ -1,0 +1,41 @@
+{
+  "name": "@versal/blocking-gadget",
+  "version": "0.2.1",
+  "scripts": {
+    "dev": "npm-run-all --parallel *:watch",
+    "build": "rimraf dist && webpack -p",
+    "build:watch": "rimraf dist && webpack -d --watch",
+    "test": "echo nothing to do",
+    "prepublish": "yarn build",
+    "pretest": "standard",
+    "lint": "standard"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/versal-blocking-gadget.js",
+  "dependencies": {
+    "@versal/gadget-resources": "^2.0.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "@versal/config-helpers": "^1.0.5",
+    "babel-eslint": "^7.2.3",
+    "babel-register": "^6.24.1",
+    "html-webpack-plugin": "^2.30.1",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
+    "standard": "^10.0.2",
+    "webpack": "^3.2.0"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "it",
+      "expect",
+      "describe",
+      "beforeEach"
+    ]
+  }
+}

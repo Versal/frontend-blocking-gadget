@@ -1,0 +1,10 @@
+{
+  "launcher": "iframe",
+  "name": "blocking",
+  "version": "0.2.0",
+  "title": "Blocking",
+  "description": "A gadget to show off arbitrary block/unblock",
+  "author": "Versal",
+  "exec": "publicQuiz",
+  "defaultConfig": {}
+}
