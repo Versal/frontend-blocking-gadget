@@ -41,11 +41,6 @@ class Gadget extends Component {
                 <button onClick={this.pass}>pass</button>
               )}
             </div>
-            <div>
-              {this.props.shouldBlock && (
-                <button onClick={this.fail}>fail</button>
-              )}
-            </div>
           </div>
         )}
       </div>
@@ -66,10 +61,6 @@ class Gadget extends Component {
       passPercentage: 0,
       shouldBlock: false
     })
-  }
-
-  fail = () => {
-    this.props.setLearnerAttribute('answers', { player: '0' })
   }
 
   pass = () => {
